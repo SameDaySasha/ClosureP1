@@ -12,7 +12,11 @@ Examples:
 
 ***********************************************************************/
 
-// Your code here
+const arrowMyMap = (arr, cb) => {
+  let newA = [];
+  arr.forEach((x) => newA.push(cb(x)))
+  return newA;
+}
 
 
 let result1 = arrowMyMap([100, 25, 81, 64], Math.sqrt);
